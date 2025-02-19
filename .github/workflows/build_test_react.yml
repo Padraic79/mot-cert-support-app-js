@@ -24,7 +24,8 @@ jobs:
        run: |
          npm start &
          sleep 10
-         npx wdio run ./wdio.conf.js
+        
+         npm run wdio --spec C:\Users\PadraicD\Desktop\MOTApp\mot-cert-support-app-js\test\specs\test.e2e.js
      - name: Build production artifacts
        run: |
          npm run build --if-present
